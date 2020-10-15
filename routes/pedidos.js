@@ -7,8 +7,11 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
+    const order = {
+        product_id: req.body.product_id
+    }
     res.status(201).send({
-        msg: "usando POST na rota de pedido"
+        msg: "order created"
     })
 });
 
