@@ -16,7 +16,7 @@ router.get('/:id_produto', (req, res, next) => {
     let num = req.params.id_produto;
     if (num === "especial") {
         res.status(200).send({
-            msg: "usando o get de apenas um produto super especial",
+            msg: "usando o get de apenas um produto super especial meesmo",
             id: num
         })
     } else {
